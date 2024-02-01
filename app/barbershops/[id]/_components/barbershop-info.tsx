@@ -35,7 +35,7 @@ const BarbershopInfo = ({barbershop}: BarbershopInfoProps) => {
       />
     </div>
 
-    <div className="px-5 pt-3 pb-6 border=b border-solid border-secondary">
+    <div className="px-5 pt-3 pb-6 border-b border-solid border-secondary">
       <h1 className="text-xl font-bold">{barbershop.name}</h1>
       <div className="flex items-conter gap-1 mt-2">
         <MapPinIcon className="text-primary" size={18}/>
