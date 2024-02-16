@@ -90,13 +90,13 @@ const ServiceItem = ({barbershop, service, isAuthenticated}: ServiceItemProps) =
     }
 
     const refreshAvailableHours = async () => {
-      const dayHourBookings = await getDayBookings(date);
+      const dayHourBookings = await getDayBookings(barbershop.id, date);
 
       setDayBookings(dayHourBookings);
     }
 
     refreshAvailableHours();
-  }, [date])
+  }, [date, barbershop.id])
 
   const timeList = useMemo(() => {
     if(!date) {
